@@ -68,9 +68,9 @@
         function watch() {
             //pobranie aktualnej godziny, minuty i sekundy
             var time = new Date();
-            hour = time.getHours(); if (hour <= 9) {hour = "0"+godzina;}
-            minuta = time.getMinutes(); if (minuta <= 9) {minuta = "0"+minuta;}
-            sekunda = time.getSeconds(); if (sekunda <= 9) {sekunda = "0"+sekunda;}
+            hour = time.getHours(); if (hour <= 9) {hour = "0" + hour;}
+            minuta = time.getMinutes(); if (minuta <= 9) {minuta = "0" + minuta;}
+            sekunda = time.getSeconds(); if (sekunda <= 9) {sekunda = "0" + sekunda;}
 
             console.log(sekunda); 
             $('#watch').html(hour + ":" + minuta + ":" + sekunda);
